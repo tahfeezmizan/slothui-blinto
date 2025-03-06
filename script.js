@@ -1,7 +1,8 @@
-// Mobile Menu Toggle
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+    menuToggle.addEventListener("click", function () {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    });
 });

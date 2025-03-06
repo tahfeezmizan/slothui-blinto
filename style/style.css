@@ -50,7 +50,7 @@ body {
     color: #4F46E5;
 }
 
-.buttons {
+.buttons{
     display: flex;
     gap: 10px;
 }
@@ -83,38 +83,80 @@ body {
 /* Mobile Menu */
 .menu-toggle {
     display: none;
-    font-size: 24px;
     cursor: pointer;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 10px 15px;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: white;
-        text-align: center;
-        padding: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .buttons {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
+.menu-toggle img {
+    width: 20px;
 }
+
+.mobile-menu{
+    display: none;
+}
+
+
+/* Mobile*/
+@media (max-width: 767px) {
+    .container {
+       width: 100%;
+    }
+    .navbar {
+        padding: 15px 5px;
+    }
+    .nav-links, .buttons {
+        display: none;
+      }
+        .menu-toggle{
+            display: block;
+        }
+        .mobile-menu {
+            margin-left: 10px;
+        }
+        .mobile-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .mobile-links li a {
+            display: block;
+            padding: 4px 0 ;
+        }
+
+        .button {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 100%;
+     }
+     .nav-links, .buttons {
+         display: none;
+       }
+         .menu-toggle{
+             display: block;
+         }
+         .mobile-menu {
+             margin-left: 25px;
+         }
+         .mobile-links {
+             display: flex;
+             flex-direction: column;
+             gap: 10px;
+         }
+         .mobile-links li a {
+             display: block;
+             padding: 4px 0 ;
+         }
+         .button {
+             margin-top: 20px;
+             display: flex;
+             gap: 20px;
+         }
+
+  }
+
