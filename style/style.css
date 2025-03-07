@@ -17,6 +17,10 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+section{
+    padding: 64px 0;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -98,7 +102,8 @@ body {
 /* banner section design start here  */
 #banner{
     text-align: center;
-    padding: 96px 0;
+    padding: 96px 0 !important;
+    background-image: linear-gradient(white, #eaf4ff, #9b9ee7);
 }
 
 .design-button {
@@ -184,6 +189,33 @@ right: 15%;
             display: flex;
             gap: 20px;
         }
+
+        /* banner style  */
+        .banner-title {
+            padding: 24px 0%;
+        }
+        h1.banner-title {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        .banner-text {
+            padding: 0 0;
+        }
+        .desktop-dashboard {
+            max-width: 100% !important;
+    max-height: fit-content;
+        }        
+        .dashboard-mockup {
+            width: 90px;
+            height: 180px;
+            position: absolute;
+            top: 35%;
+            right: 12%;
+        }
+        .app-store-links {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
   }
   
   /* Tablet */
@@ -215,5 +247,18 @@ right: 15%;
              gap: 20px;
          }
 
+         /* banner style  */
+        .banner-title {
+            padding: 24px 0%;
+        }
+        .banner-text {
+            padding: 0 14%;
+        }
+        .desktop-dashboard {
+            max-width: 100%;
+        }        
+        .dashboard-mockup {
+            max-width: 100%;
+        }
   }
 
