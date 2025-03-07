@@ -95,6 +95,63 @@ body {
 }
 
 
+/* banner section design start here  */
+#banner{
+    text-align: center;
+    padding: 96px 0;
+}
+
+.design-button {
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    border-radius: 30px;
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.banner-title {
+    color: #1E293B;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 68px;
+    padding: 24px 20%;
+}
+.banner-text {
+    font-size: 18px;
+    color: #475569;
+    line-height: 160%;
+    padding: 0 22%;
+}
+.app-store-links{
+    margin-top: 50px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dashboard-image{
+    position: relative;
+}
+
+.desktop-dashboard{
+    width: 800px;
+    height: 533px;
+}
+.dashboard-mockup{
+    width: 240px;
+    height: 467px;
+position: absolute;
+top: 25%;
+right: 15%;
+}
+
+
+
+
 /* Mobile*/
 @media (max-width: 767px) {
     .container {
