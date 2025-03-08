@@ -120,7 +120,8 @@ display: none;
     line-height: 20px;
 }
 
-.banner-title {
+.banner-title,
+.stat-number {
     color: #1E293B;
     font-size: 60px;
     font-weight: 800;
@@ -181,7 +182,8 @@ right: 15%;
     padding-bottom: 64px;
 }
 
-.feature-title{
+.feature-title,
+.achievements-title{
     font-size: 36px;
     font-weight: 800;
     color: #1E293B;
@@ -189,7 +191,8 @@ right: 15%;
     padding: 24px 0;
 }
 
-.feature-text{
+.feature-text,
+.achievements-text{
     font-size: 18px;
     color: #475569;
     line-height: 160%;
@@ -221,6 +224,54 @@ right: 15%;
     line-height: 160%;
     padding: 0 20px;
 }
+
+
+
+/* achievements section design start here  */
+#achievements{
+    background: #F8FAFC;
+    text-align: center;
+    padding: 96px 0;
+}
+
+.houseIcon{
+width: 56px;
+height: 56px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+    border-radius: 100%;
+background-color: #EEF2FF;
+}
+
+.achievements-stats {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.stat-item{
+    border-right: 1px solid #CBD5E1 !important;
+    border-bottom: 0 !important;
+}
+.stat-item:last-child{
+    border-right: 0 !important;
+}
+.stat-number{
+    color: #4F46E5;
+}
+.state-title{
+    font-size: 18px;
+    color: #475569;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+
+
 
 /* Mobile*/
 @media (max-width: 767px) {
@@ -289,6 +340,29 @@ right: 15%;
         .feature-text {
             padding: 0 2%;
         }
+
+        .achievements-title {
+            padding: 0;
+            font-size: 30px;
+            line-height: 38px;
+        }
+        .achievements-text {
+            padding: 0;
+        }
+        .achievements-stats {
+            max-width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .stat-item {
+            border-right: 0;
+            border-bottom: 1px solid #CBD5E1;
+        }
+        .stat-item:last-child {
+            border-bottom: 0;
+        }
+        .state-title {
+            padding-bottom: 32px;
+        }
         
        
   }
@@ -343,6 +417,16 @@ right: 15%;
         .feature-text {
             padding: 0 10%;
         }
-        
-        
+     
+        .achievements-title {
+            padding: 0px 20%;
+            margin-bottom: 20px;
+        }
+        .achievements-text {
+            padding: 0 15%;
+        }
+        .achievements-stats {
+            max-width: 100%;
+        }
+    }
 
