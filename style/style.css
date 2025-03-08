@@ -94,10 +94,13 @@ section{
     width: 20px;
 }
 
-.mobile-menu{
-    display: none;
+.mobile-menu {
+display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    padding: 20px 0 40px 0;
 }
-
 
 /* banner section design start here  */
 #banner{
@@ -155,6 +158,23 @@ right: 15%;
 }
 
 
+/* brands */
+#brands{
+    background: #F8FAFC;
+}
+
+.brand-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.second-row{
+    justify-content: space-evenly !important;
+}
+
+
 
 
 /* Mobile*/
@@ -172,7 +192,8 @@ right: 15%;
             display: block;
         }
         .mobile-menu {
-            margin-left: 10px;
+            margin-left: -15px;
+            padding-left: 30px;
         }
         .mobile-links {
             display: flex;
@@ -230,7 +251,8 @@ right: 15%;
              display: block;
          }
          .mobile-menu {
-             margin-left: 25px;
+             margin-left: -15px;
+                padding-left: 40px;
          }
          .mobile-links {
              display: flex;
