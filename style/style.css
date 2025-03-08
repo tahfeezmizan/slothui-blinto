@@ -175,7 +175,52 @@ right: 15%;
 }
 
 
+/* Our Main Features section design here */
+.feature-header{
+    text-align: center;
+    padding-bottom: 64px;
+}
 
+.feature-title{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1E293B;
+    line-height: 44px;
+    padding: 24px 0;
+}
+
+.feature-text{
+    font-size: 18px;
+    color: #475569;
+    line-height: 160%;
+    padding: 0 25%;
+}
+.feature-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.feature-box img {
+    margin-bottom: 20px;
+}
+
+.item-title{
+    color: #1E293B;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.item-text{
+    color: #475569;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 0 20px;
+}
 
 /* Mobile*/
 @media (max-width: 767px) {
@@ -237,6 +282,15 @@ right: 15%;
             margin-top: 40px;
             margin-bottom: 40px;
         }
+        
+        .feature-items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .feature-text {
+            padding: 0 2%;
+        }
+        
+       
   }
   
   /* Tablet */
@@ -282,5 +336,13 @@ right: 15%;
         .dashboard-mockup {
             max-width: 100%;
         }
-  }
+
+        .feature-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .feature-text {
+            padding: 0 10%;
+        }
+        
+        
 
