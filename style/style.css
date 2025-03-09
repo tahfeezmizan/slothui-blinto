@@ -176,14 +176,15 @@ right: 15%;
 }
 
 
-/* Our Main Features section design here */
-.feature-header{
+/* Our Main servicess section design here */
+.services-header{
     text-align: center;
     padding-bottom: 64px;
 }
 
-.feature-title,
-.achievements-title{
+.services-title,
+.achievements-title,
+.feature-title{
     font-size: 36px;
     font-weight: 800;
     color: #1E293B;
@@ -191,14 +192,15 @@ right: 15%;
     padding: 24px 0;
 }
 
-.feature-text,
-.achievements-text{
+.services-text,
+.achievements-text,
+.feature-text{
     font-size: 18px;
     color: #475569;
     line-height: 160%;
     padding: 0 25%;
 }
-.feature-items {
+.services-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px;
@@ -206,7 +208,7 @@ right: 15%;
     justify-content: space-around;
     text-align: center;
 }
-.feature-box img {
+.services-box img {
     margin-bottom: 20px;
 }
 
@@ -271,6 +273,39 @@ background-color: #EEF2FF;
 
 
 
+/* feature section design start here */
+#feature{
+    background: #fff;
+    padding: 96px 0;
+}
+.feature-header{
+margin-bottom: 64px;
+}
+.feature-text{
+    width: 650px;
+    padding: 0;
+}
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.feature-item{
+    border-left: 4px solid #4F46E5;
+    margin-bottom: 12px;
+    padding: 24px 20px;
+}
+.feature-item-text {
+    padding: 0;
+    width: 450px;
+}
+.feature-image {
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 /* Mobile*/
@@ -334,10 +369,10 @@ background-color: #EEF2FF;
             margin-bottom: 40px;
         }
         
-        .feature-items {
+        .services-items {
             grid-template-columns: repeat(1, 1fr);
         }
-        .feature-text {
+        .services-text {
             padding: 0 2%;
         }
 
@@ -363,7 +398,19 @@ background-color: #EEF2FF;
         .state-title {
             padding-bottom: 32px;
         }
-        
+        .feature-content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .feature-text {
+            max-width: 100%;
+        }
+        .feature-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .feature-item-text {
+            width: 100%;
+        }
        
   }
   
@@ -411,10 +458,10 @@ background-color: #EEF2FF;
             max-width: 100%;
         }
 
-        .feature-items {
+        .services-items {
             grid-template-columns: repeat(2, 1fr);
         }
-        .feature-text {
+        .services-text {
             padding: 0 10%;
         }
      
